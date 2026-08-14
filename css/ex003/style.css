@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+    color: red;
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+h2 {
+    color: beige;
+}
+p {
+    color: blue;
+}
