@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>GetElements</h1>
+    <div id="quadrado" onclick="mudarCor()">
+        oi
+    </div>
+    <p id="quadrado" onclick="vermelho()">
+        vermelho
+    </p>
+    <p id="quadrado" onclick="verde()">
+        verde
+    </p>
+</body>
+<script>
+
+    function mudarCor(){
+        document.getElementById("quadrado").style.backgroundColor = "blue"
+    }
+
+    function vermelho(){
+        document.getElementById("quadrado").style.backgroundColor = "red"
+    }
+    function verde(){
+        document.getElementById("quadrado").style.backgroundColor = "green"
+    }
+</script>
+</html>
