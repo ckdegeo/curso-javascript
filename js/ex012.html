@@ -11,16 +11,21 @@
     <input type="number" id="numero1"> +
     <input type="number" id="numero2"> 
 
-    <input type="button" value="Somar" onclick="somarValores()">
+    <input type="button" value="Somar" id="botao">
 
     <p id="res"> Resultado</p>
 
-
     <script>
+
+    let botaoSomar = document.getElementById('botao')
+
+    botaoSomar.addEventListener('click', somarValores)
+
         function somarValores(){
             console.log("Está na função")
             let numero1 = document.getElementById('numero1').value
             let numero2 = document.getElementById('numero2').value
+        
 
             let soma = Number(numero1) + Number(numero2)
 
