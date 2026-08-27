@@ -51,6 +51,7 @@
          }
 
     </style>
+
 </head>
 <body>
         <form class="centralizada" id="formulario">
@@ -58,18 +59,34 @@
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             
             <label for="email"> E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" >
 
             <label for="idade"> Idade</label>
-            <input type="number" name="number" id="number" placeholder="Digite sua idade" required>
+            <input type="number" name="number" id="number" placeholder="Digite sua idade" >
             
             <label for="senha"> Senha </label>
-            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" >
                 
             <br>
 
             <input class="btnEnviar" type="submit" value="Enviar">
         </form>
+
+
+        <script>
+            let form = document.getElementById('formulario')
+            form.addEventListener('submit', function(event){
+             
+                event.preventDefault()
+                console.log(event)
+                let nome = document.getElementById('nome').value
+                alert(`Ola ${nome} submitted`)
+            }
+               )
+
+             
+            
+        </script>
 
     </div>
 </body>
